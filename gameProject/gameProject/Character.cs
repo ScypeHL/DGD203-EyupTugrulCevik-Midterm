@@ -10,15 +10,21 @@ namespace Pro
     public class Character: Game
     {
         Classes classes = new Classes();
-        public Character(Classes Classes)
+        Weapons weapons = new Weapons();
+        public Character(Classes Classes, Weapons Weapons)
         {
             classes = Classes;
-
+            weapons = Weapons;
         }
 
-        public void start()
+        public void Class()
         {
             classes.start();
+        }
+
+        public void Weapon()
+        {
+            weapons.start();
         }
     }
 }

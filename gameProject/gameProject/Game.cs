@@ -11,13 +11,17 @@ namespace Pro
         public static int Ap = 10;           // attack point
         public static int Sp = 10;           // skill point
         public static int Dp = 10;           // defence point
-        public static float Xp = 0;          // experience point
         public static float ASpeed = 1;      // attack speed
         public static float Hp = 100;        // health point
+
+        public static float Xp = 0;          // experience point
         public static string ClassName;      // class name
-        public static string Name = "you";   // name, its not a point
+        public static string Name = "";   // name, its not a point
         
+        public static bool yesnoOut;
+
         public static List<string> notAnswer = new List<string>();
+        public static string[] lands = {"Renetria", "Vetria", "Suloqinetria", "Detenetria", "Kernil", "Xhanlir", "Vezbeflin", "Trabraquel"};
         public static Random rng = new Random();
 
         public Game()
