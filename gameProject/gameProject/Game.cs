@@ -29,7 +29,6 @@ namespace Pro
             notAnswer.Add("Are you here, why are you not answering?");
             notAnswer.Add("Did i scare you?");
             notAnswer.Add("Can you please answer the question first?");
-            notAnswer.Add($"earth to {Name}, earth to {Name}. Can you hear me?");
             notAnswer.Add("Okay take your time");
             notAnswer.Add("I have plenty of time so don't worry");
         }

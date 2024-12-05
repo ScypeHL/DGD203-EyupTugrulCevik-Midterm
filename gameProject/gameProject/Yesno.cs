@@ -36,7 +36,7 @@ namespace Pro
             }
             else if (q1 == null ^ q1 == "")
             {
-                Console.WriteLine(notAnswer[rng.Next(0, 6)]);
+                Console.WriteLine(notAnswer[rng.Next(0, 5)]);
                 yesno();
             }
             else

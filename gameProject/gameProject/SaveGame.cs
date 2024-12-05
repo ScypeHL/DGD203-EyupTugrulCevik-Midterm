@@ -10,6 +10,13 @@ namespace Pro
     class SaveGame: Game
     {
         StreamWriter saveWrite = new StreamWriter("saves.txt");
+
+        int rAp;
+        int rSp;
+        int rDp;
+        float rAspeed;
+        float rHp;
+
         public SaveGame()
         {
 
@@ -26,6 +33,15 @@ namespace Pro
             saveWrite.WriteLine(ClassName);
             saveWrite.WriteLine(Xp);
             saveWrite.Close();
+        }
+
+        public void load()
+        {
+            //rAp = Convert.ToInt16(saveRead.ReadLine());
+            //rSp = Convert.ToInt16(saveRead.ReadLine());
+            //rDp = Convert.ToInt16(saveRead.ReadLine());
+            //rAspeed = (float) Convert.ToDouble(saveRead.ReadLine());
+            //rHp = (float) Convert.ToDouble(saveRead.ReadLine());
         }
     }
 }

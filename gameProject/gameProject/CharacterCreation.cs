@@ -16,7 +16,6 @@ namespace Pro
         SaveGame saveGame = new SaveGame();
 
         bool regret = false;
-
         string birthplace = lands[rng.Next(0, 8)];
 
         // text boxes are in the start
@@ -49,8 +48,8 @@ namespace Pro
             Console.WriteLine("You will be using it after all");
             Console.WriteLine("So do you want to [create new] or [use preset]");
             create();
-            classes.start();
             saveGame.save();
+            classes.start();
         }
         #endregion
 
@@ -120,7 +119,7 @@ namespace Pro
             q1 = Console.ReadLine().ToLower();
             if (q1 == null ^ q1 == "")
             {
-                Console.WriteLine(notAnswer[rng.Next(0, 6)]);
+                Console.WriteLine(notAnswer[rng.Next(0, 5)]);
                 create();
             }
             else if (q1 == "create new")
@@ -160,7 +159,7 @@ namespace Pro
             q1 = Console.ReadLine();
             if (q1 == null ^ q1 == "")
             {
-                Console.WriteLine(notAnswer[rng.Next(0, 6)]);
+                Console.WriteLine(notAnswer[rng.Next(0, 5)]);
                 chooseClass();
             }
             else if (q1 == "hunter" ^ q1 == "Hunter")
@@ -178,6 +177,10 @@ namespace Pro
             else if (q1 == "archer" ^ q1 == "Archer")
             {
                 Character archer = new Character(new Archer(), new Bow());
+            }
+            else if (q1 == "dummy" ^ q1 == "Dummy")
+            {
+                Character archer = new Character(new Dummy(), new Sword());
             }
             else
             {
@@ -703,6 +706,7 @@ namespace Pro
             
             Console.WriteLine("");
             Console.WriteLine("So Lets see the what we got, shall we?");
+            classes.compare();
         }
 
         void tale82()
@@ -715,6 +719,7 @@ namespace Pro
 
             Console.WriteLine("");
             Console.WriteLine("Okay, so lets take a look at the results");
+            classes.compare();
         }
 
         void tale83()
@@ -727,6 +732,7 @@ namespace Pro
 
             Console.WriteLine("");
             Console.WriteLine("Okay then, those are the results");
+            classes.compare();
         }
         #endregion
     }
