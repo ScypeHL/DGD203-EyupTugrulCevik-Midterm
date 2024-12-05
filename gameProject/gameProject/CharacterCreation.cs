@@ -180,7 +180,7 @@ namespace Pro
             }
             else if (q1 == "dummy" ^ q1 == "Dummy")
             {
-                Character archer = new Character(new Dummy(), new Sword());
+                Character dummy = new Character(new Dummy(), new Sword());
             }
             else
             {
